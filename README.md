@@ -9,7 +9,6 @@ Repoviewer is a simple mobile application, created in React Native, with the aim
 ![design1](/assets/Frame1.png)
 ![design2](/assets/Frame2.png)
 ![design3](/assets/Frame3.png)
-![design4](/assets/Frame4.png)
 ![design5](/assets/Frame5.png)
 ![design6](/assets/Frame6.png)
 
