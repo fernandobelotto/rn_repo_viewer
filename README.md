@@ -6,12 +6,11 @@ Repoviewer is a simple mobile application, created in React Native, with the aim
 
 ## design on figma
 
-![design1](/assets/frame1.png)
-![design2](/assets/frame2.png)
-![design3](/assets/frame3.png)
-![design4](/assets/frame4.png)
-![design5](/assets/frame5.png)
-![design6](/assets/frame6.png)
+![design1](/assets/Frame1.png|width=300)
+![design2](/assets/Frame2.png|width=300)
+![design3](/assets/Frame3.png|width=300)
+![design5](/assets/Frame5.png|width=300)
+![design6](/assets/Frame6.png|width=300)
 
 ## Dependencies
 
