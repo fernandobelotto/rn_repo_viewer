@@ -25,7 +25,6 @@ const theme = {
 export default function App () {
   return (
     <UserProvider>
-
       <PaperProvider theme={theme}>
         <NavigationContainer>
           <Stack.Navigator initialRouteName='TitleScreen' screenOptions={{ header: () => null }}>
