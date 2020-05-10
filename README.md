@@ -1,4 +1,4 @@
-# repoviewer
+# Repo Viewer
 
 Created: Apr 18, 2020 8:00 PM
 
@@ -6,11 +6,11 @@ Repoviewer is a simple mobile application, created in React Native, with the aim
 
 ## design on figma
 
-![design1](/assets/Frame1.png|width=300)
-![design2](/assets/Frame2.png|width=300)
-![design3](/assets/Frame3.png|width=300)
-![design5](/assets/Frame5.png|width=300)
-![design6](/assets/Frame6.png|width=300)
+![design1](/assets/Frame1.png)
+![design2](/assets/Frame2.png)
+![design3](/assets/Frame3.png)
+![design5](/assets/Frame5.png)
+![design6](/assets/Frame6.png)
 
 ## Dependencies
 
