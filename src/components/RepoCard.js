@@ -1,10 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
-const RepoCard = ({ data }) => {
+const RepoCard = ({ data, navigation }) => {
   return (
-    <TouchableOpacity activeOpacity={1}>
-
+    <TouchableOpacity activeOpacity={1} onPress={() => navigation.navigate('RepoDetailScreen', { data })}>
       <View style={styles.card}>
         <View style={{ padding: 15 }}>
           <Text style={styles.title}>{data.name}</Text>

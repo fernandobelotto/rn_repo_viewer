@@ -11,7 +11,7 @@ const ProfileScreen = () => {
   const user = context.username
 
   useEffect(() => {
-    async function getDataApi() {
+    async function getDataApi () {
       const response = await api.get(`/users/${user}`)
       setData(response.data)
     }
@@ -45,7 +45,7 @@ const ProfileScreen = () => {
   ]
 
   return (
-    <View>
+    <View style={{ backgroundColor: 'white', flex: 1 }}>
       <ScrollView>
         <Text style={styles.header}>Profile</Text>
         <View style={styles.profile}>
@@ -62,18 +62,8 @@ const ProfileScreen = () => {
           <Text style={[styles.name, { marginTop: 20 }]}>{data.followers}</Text>
           <Text style={[styles.username]}>Followers</Text>
           <Text style={[styles.name, { marginTop: 20 }]}>{data.public_repos}</Text>
-          <Text style={[styles.username]}>Repositories</Text>
+          <Text style={[styles.username]}>Public Repositories</Text>
         </View>
-        <ScrollView horizontal style={{ marginHorizontal: 20, marginVertical: 20 }}>
-          <ContributionGraph
-            values={commitsData}
-            endDate={new Date('2017-04-01')}
-            numDays={365}
-            width={900}
-            height={220}
-            chartConfig={chartConfig}
-          />
-        </ScrollView>
       </ScrollView>
     </View>
   )

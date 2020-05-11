@@ -1,14 +1,21 @@
-import React, { useEffect } from 'react'
-import { View, Text } from 'react-native'
+import React from 'react'
+import { View, Text, Image } from 'react-native'
+import { Button } from 'react-native-paper'
 
 const TitleScreen = ({ navigation }) => {
-  useEffect(() => {
-    setTimeout(() => { navigation.navigate('SignInScreen') }, 2000)
-  }, [])
   return (
-    <View style={{ backgroundColor: '#C4C4C4', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{ textAlign: 'left', fontFamily: 'Montserrat-Light', fontSize: 64 }}>Repo</Text>
-      <Text style={{ textAlign: 'left', fontFamily: 'Montserrat-Bold', fontSize: 64 }}>Viewer</Text>
+    <View style={{ backgroundColor: '#fff', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Image style={{ resizeMode: 'contain', width: 100, height: 100 }} source={require('../assets/icon.png')} />
+      <Text style={{ textAlign: 'left', fontFamily: 'Montserrat-Light', fontSize: 58 }}>Repo</Text>
+      <Text style={{ textAlign: 'left', fontFamily: 'Montserrat-Bold', fontSize: 58 }}>Viewer</Text>
+      <Button
+        style={{ marginTop: 100 }}
+        icon='login'
+        mode='contained'
+        onPress={() => navigation.navigate('SignInScreen')}
+      >
+        Continue
+      </Button>
     </View>
   )
 }

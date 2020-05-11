@@ -9,6 +9,7 @@ import TitleScreen from './src/pages/TitleScreen'
 import SignInScreen from './src/pages/SignInScreen'
 
 import UserProvider from './src/context/userContext'
+import RepoDetailScreen from './src/pages/RepoDetailScreen'
 
 const Stack = createStackNavigator()
 
@@ -22,15 +23,16 @@ const theme = {
   }
 }
 
-export default function App () {
+export default function App() {
   return (
     <UserProvider>
       <PaperProvider theme={theme}>
         <NavigationContainer>
-          <Stack.Navigator initialRouteName='TitleScreen' screenOptions={{ header: () => null }}>
-            <Stack.Screen name='BottomStack' component={BottomStack} />
-            <Stack.Screen name='TitleScreen' component={TitleScreen} />
-            <Stack.Screen name='SignInScreen' component={SignInScreen} />
+          <Stack.Navigator initialRouteName='TitleScreen'>
+            <Stack.Screen name='BottomStack' component={BottomStack} options={{ header: () => null }} />
+            <Stack.Screen name='TitleScreen' component={TitleScreen} options={{ header: () => null }} />
+            <Stack.Screen name='SignInScreen' component={SignInScreen} options={{ header: () => null }} />
+            <Stack.Screen name='RepoDetailScreen' component={RepoDetailScreen} options={{ title: '' }} />
           </Stack.Navigator>
         </NavigationContainer>
       </PaperProvider>

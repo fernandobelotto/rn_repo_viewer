@@ -15,6 +15,8 @@ const SignInScreen = ({ navigation }) => {
           label='Github Username'
           value={context.username}
           onChangeText={(text) => context.setUsername(text)}
+          autoCapitalize={false}
+          autoCorrect={false}
         />
       </View>
       <Button
@@ -23,7 +25,7 @@ const SignInScreen = ({ navigation }) => {
         mode='contained'
         onPress={() => navigation.navigate('BottomStack')}
       >
-          Continue
+        Continue
       </Button>
     </View>
   )

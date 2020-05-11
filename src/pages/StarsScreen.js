@@ -4,7 +4,7 @@ import RepoCard from '../components/RepoCard'
 import { UserContext } from '../context/userContext'
 import api from '../api/github'
 
-const ReposScreen = () => {
+const ReposScreen = ({ navigation }) => {
   const [data, setData] = useState([])
   const context = useContext(UserContext)
   const user = context.username
@@ -22,7 +22,7 @@ const ReposScreen = () => {
       <Text style={styles.header}>Stars</Text>
       <FlatList
         data={data}
-        renderItem={({ item }) => { return (<RepoCard data={item} />) }}
+        renderItem={({ item }) => { return (<RepoCard data={item} navigation={navigation} />) }}
       />
     </View>
   )
