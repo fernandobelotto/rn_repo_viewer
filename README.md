@@ -28,7 +28,7 @@ yarn add react-native-paper
 
 To run the app on your mobile phone, first run
 
-`git clone[https://github.com/fernandobelotto/repoviewer](https://github.com/fernandobelotto/repoviewer)`
+`git clone https://github.com/fernandobelotto/repoviewer`
 
 after, you should cd into the folder and run yarn
 
